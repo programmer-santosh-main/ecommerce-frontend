@@ -101,15 +101,19 @@ export default function OrderManagement() {
     filterOrders();
   }, [orders, searchTerm, statusFilter, paymentFilter, dateFilter]);
 
-  const fetchOrders = async () => {
-    try {
-      const token = localStorage.getItem("token");
-      const response = await fetch(`${backendUrl}/api/orders`, {
-        headers: {
-          "Authorization": `Bearer ${token}`
-        }
-      });
-      
+const fetchOrders = async () => {
+  try {
+    const token = localStorage.getItem("adminToken"); // ✅ admin token
+
+    if (!token) {
+      throw new Error("No admin token found. Please log in as admin.");
+    }
+
+    const response = await fetch(`${backendUrl}/api/orders`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
       if (!response.ok) throw new Error("Failed to fetch orders");
       
       const data = await response.json();
