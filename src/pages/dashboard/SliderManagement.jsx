@@ -118,7 +118,7 @@ const SliderManagement = () => {
     setSuccess('');
     setIsSubmitting(true);
 
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem('adminToken');
     
     if (!token) {
       setError('Authentication required. Please login again.');
