@@ -127,7 +127,7 @@ const OrderTable = ({
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div className="text-sm font-bold text-emerald-100">
-                      ₹{order.total.toFixed(2)}
+                      रू{order.total.toFixed(2)}
                     </div>
                     <div className="text-xs text-emerald-300/50">
                       {order.items?.length || 0} items
@@ -273,19 +273,19 @@ const OrderTable = ({
                               </div>
                               <div>
                                 <p className="text-sm text-emerald-300/70">Subtotal</p>
-                                <p className="text-emerald-200 font-medium">₹{order.subtotal?.toFixed(2) || "0.00"}</p>
+                                <p className="text-emerald-200 font-medium">रू{order.subtotal?.toFixed(2) || "0.00"}</p>
                               </div>
                               <div>
                                 <p className="text-sm text-emerald-300/70">Tax</p>
-                                <p className="text-emerald-200 font-medium">₹{order.tax?.toFixed(2) || "0.00"}</p>
+                                <p className="text-emerald-200 font-medium">रू{order.tax?.toFixed(2) || "0.00"}</p>
                               </div>
                               <div>
                                 <p className="text-sm text-emerald-300/70">Shipping</p>
-                                <p className="text-emerald-200 font-medium">₹{order.shipping?.toFixed(2) || "0.00"}</p>
+                                <p className="text-emerald-200 font-medium">रू{order.shipping?.toFixed(2) || "0.00"}</p>
                               </div>
                               <div className="col-span-2 pt-2 border-t border-emerald-800/30">
                                 <p className="text-sm text-emerald-300/70">Total</p>
-                                <p className="text-lg font-bold text-emerald-100">₹{order.total?.toFixed(2) || "0.00"}</p>
+                                <p className="text-lg font-bold text-emerald-100">रू{order.total?.toFixed(2) || "0.00"}</p>
                               </div>
                             </div>
                           </div>
@@ -337,7 +337,7 @@ const OrderTable = ({
                                               )}
                                             </div>
                                           </div>
-                                          <p className="text-emerald-300 font-bold ml-2">₹{item.price?.toFixed(2) || "0.00"}</p>
+                                          <p className="text-emerald-300 font-bold ml-2">रू{item.price?.toFixed(2) || "0.00"}</p>
                                         </div>
                                         <div className="flex justify-between items-center mt-2">
                                           <div className="flex items-center gap-4 flex-wrap">
@@ -361,7 +361,7 @@ const OrderTable = ({
                                             )}
                                           </div>
                                           <p className="text-emerald-300 font-semibold">
-                                            ₹{((item.price || 0) * (item.quantity || 1)).toFixed(2)}
+                                            रू{((item.price || 0) * (item.quantity || 1)).toFixed(2)}
                                           </p>
                                         </div>
                                       </div>

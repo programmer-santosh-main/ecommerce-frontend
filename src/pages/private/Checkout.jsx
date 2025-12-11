@@ -366,7 +366,7 @@ export default function Checkout() {
               
               <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
                 <p className="font-medium text-blue-800">Total Amount</p>
-                <p className="text-2xl font-bold text-blue-600">₹{orderDetails.total?.toFixed(2) || calculateTotal().toFixed(2)}</p>
+                <p className="text-2xl font-bold text-blue-600">रू{orderDetails.total?.toFixed(2) || calculateTotal().toFixed(2)}</p>
               </div>
             </div>
             
@@ -689,12 +689,12 @@ export default function Checkout() {
                         <p className="font-bold text-gray-900">
                           {option.price === 0 || (option.id === "standard" && orderData.subtotal >= option.freeMin)
                             ? "FREE"
-                            : `₹${option.price}`
+                            : `रू${option.price}`
                           }
                         </p>
                         {option.id === "standard" && orderData.subtotal < option.freeMin && (
                           <p className="text-xs text-amber-600">
-                            Add ₹{(option.freeMin - orderData.subtotal).toFixed(2)} for free delivery
+                            Add रू{(option.freeMin - orderData.subtotal).toFixed(2)} for free delivery
                           </p>
                         )}
                       </div>
@@ -749,50 +749,7 @@ export default function Checkout() {
                 </div>
 
                 {/* Esewa */}
-                <div
-                  onClick={() => setSelectedPayment("esewa")}
-                  className={`border-2 rounded-xl p-4 cursor-pointer transition-all hover:shadow-md ${
-                    selectedPayment === "esewa"
-                      ? 'border-purple-500 bg-purple-50'
-                      : 'border-gray-200 hover:border-gray-300'
-                  }`}
-                >
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-3">
-                      <div className={`p-2 rounded-lg ${
-                        selectedPayment === "esewa"
-                          ? 'bg-purple-100 text-purple-600'
-                          : 'bg-gray-100 text-gray-600'
-                      }`}>
-                        <Smartphone className="w-5 h-5" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-gray-900">Pay with eSewa</h3>
-                        <p className="text-sm text-gray-600">Secure online payment</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <img 
-                        src="https://esewa.com.np/common/images/esewa_logo.png" 
-                        alt="eSewa" 
-                        className="h-6"
-                      />
-                      {selectedPayment === "esewa" && (
-                        <div className="w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center">
-                          <CheckCircle className="w-4 h-4 text-white" />
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                  
-                  {selectedPayment === "esewa" && (
-                    <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
-                      <p className="text-sm text-blue-700">
-                        You will be redirected to eSewa's secure payment gateway to complete your payment.
-                      </p>
-                    </div>
-                  )}
-                </div>
+                
               </div>
             </motion.div>
           </div>
@@ -833,11 +790,11 @@ export default function Checkout() {
                       </div>
                       <div className="text-right">
                         <p className="font-semibold text-gray-900">
-                          ₹{(item.finalPrice * item.quantity).toFixed(2)}
+                          रू{(item.finalPrice * item.quantity).toFixed(2)}
                         </p>
                         {item.discount > 0 && (
                           <p className="text-xs text-green-600">
-                            Save ₹{((item.price - item.finalPrice) * item.quantity).toFixed(2)}
+                            Save रू{((item.price - item.finalPrice) * item.quantity).toFixed(2)}
                           </p>
                         )}
                       </div>
@@ -849,7 +806,7 @@ export default function Checkout() {
                 <div className="space-y-3 border-t border-gray-200 pt-4">
                   <div className="flex justify-between">
                     <span className="text-gray-600">Subtotal</span>
-                    <span className="font-medium">₹{orderData.subtotal.toFixed(2)}</span>
+                    <span className="font-medium">रू{orderData.subtotal.toFixed(2)}</span>
                   </div>
                   
                   <div className="flex justify-between">
@@ -857,7 +814,7 @@ export default function Checkout() {
                     <span className="font-medium">
                       {selectedDelivery === "standard" && orderData.subtotal >= 999
                         ? "FREE"
-                        : `₹${deliveryOptions.find(d => d.id === selectedDelivery)?.price || 0}`
+                        : `रू${deliveryOptions.find(d => d.id === selectedDelivery)?.price || 0}`
                       }
                     </span>
                   </div>
@@ -865,7 +822,7 @@ export default function Checkout() {
                   {orderData.tax > 0 && (
                     <div className="flex justify-between">
                       <span className="text-gray-600">Tax</span>
-                      <span className="font-medium">₹{orderData.tax.toFixed(2)}</span>
+                      <span className="font-medium">रू{orderData.tax.toFixed(2)}</span>
                     </div>
                   )}
                   
@@ -873,7 +830,7 @@ export default function Checkout() {
                     <div className="flex justify-between text-lg font-bold">
                       <span>Total</span>
                       <span className="text-2xl bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                        ₹{calculateTotal().toFixed(2)}
+                        रू{calculateTotal().toFixed(2)}
                       </span>
                     </div>
                     <p className="text-sm text-gray-500 mt-1">Inclusive of all taxes</p>
@@ -928,9 +885,9 @@ export default function Checkout() {
                     Processing...
                   </div>
                 ) : selectedPayment === "cod" ? (
-                  `Place Order • ₹${calculateTotal().toFixed(2)}`
+                  `Place Order • रू${calculateTotal().toFixed(2)}`
                 ) : (
-                  `Pay with eSewa • ₹${calculateTotal().toFixed(2)}`
+                  `Pay with eSewa • रू${calculateTotal().toFixed(2)}`
                 )}
               </motion.button>
 

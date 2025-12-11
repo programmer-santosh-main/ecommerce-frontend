@@ -23,7 +23,7 @@ const SliderManagement = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // CORRECT: Your backend URL without extra 
-  const backendUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
+  const backendUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
   console.log('Backend URL:', backendUrl);
 
   // Fetch all sliders - FIXED URL
@@ -233,7 +233,7 @@ const SliderManagement = () => {
     }
 
     try {
-      const token = localStorage.getItem('token');
+      const token = localStorage.getItem('adminToken');
       if (!token) {
         setError('Authentication required. Please login again.');
         return;
@@ -256,7 +256,7 @@ const SliderManagement = () => {
   // Toggle slider status - CORRECT URL
   const toggleStatus = async (id, currentStatus) => {
     try {
-      const token = localStorage.getItem('token');
+      const token = localStorage.getItem('adminToken');
       if (!token) {
         setError('Authentication required. Please login again.');
         return;

@@ -462,15 +462,15 @@ export default function ViewProduct() {
               <div className="space-y-2">
                 <div className="flex items-baseline gap-3">
                   <span className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                    ₹{finalPrice}
+                    रू{finalPrice}
                   </span>
                   {product.discount > 0 && (
                     <>
                       <span className="text-2xl text-gray-400 line-through">
-                        ₹{product.price.toFixed(2)}
+                        रू{product.price.toFixed(2)}
                       </span>
                       <span className="text-lg text-green-600 font-semibold">
-                        Save ₹{discountAmount.toFixed(2)} ({product.discount}% off)
+                        Save रू{discountAmount.toFixed(2)} ({product.discount}% off)
                       </span>
                     </>
                   )}
@@ -633,7 +633,7 @@ export default function ViewProduct() {
                           <CheckCircle className="w-5 h-5" />
                           <div className="flex flex-col items-start">
                             <span className="font-bold">Added to Cart</span>
-                            <span className="text-xs opacity-90">{cartQuantity} × ₹{finalPrice}</span>
+                            <span className="text-xs opacity-90">{cartQuantity} × रू{finalPrice}</span>
                           </div>
                         </>
                       ) : (
@@ -642,7 +642,7 @@ export default function ViewProduct() {
                           <div className="flex flex-col items-start">
                             <span className="font-bold">{isOutOfStock ? 'Out of Stock' : 'Add to Cart'}</span>
                             <span className="text-xs opacity-90">
-                              {quantity} × ₹{finalPrice} = ₹{(quantity * finalPrice).toFixed(2)}
+                              {quantity} × रू{finalPrice} = रू{(quantity * finalPrice).toFixed(2)}
                             </span>
                           </div>
                         </>
@@ -716,7 +716,7 @@ export default function ViewProduct() {
                           <div>
                             <p className="font-medium text-green-800">Item in your cart</p>
                             <p className="text-sm text-green-600">
-                              {cartQuantity} × {product.name} • ₹{(cartQuantity * finalPrice).toFixed(2)}
+                              {cartQuantity} × {product.name} • रू{(cartQuantity * finalPrice).toFixed(2)}
                             </p>
                           </div>
                         </div>

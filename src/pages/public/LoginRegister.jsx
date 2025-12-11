@@ -399,7 +399,7 @@ export default function LoginRegister() {
                   setIsLogin(!isLogin);
                   setMessage("");
                 }}
-                className="text-emerald-300 hover:text-emerald-200 font-semibold transition-colors inline-flex items-center gap-1"
+                className="text-emerald-300 hover:text-emerald-200 font-bold text-2xl transition-colors inline-flex items-center gap-1"
               >
                 {isLogin ? "Register now" : "Sign in"}
                 <ArrowRight className="w-3 h-3" />

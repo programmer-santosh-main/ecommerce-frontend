@@ -1,43 +1,291 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <!-- Mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- DEFAULT SEO (React Helmet will override these) -->
-    <title>Best HaatBazar – Online Shopping Nepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+<meta name="google-site-verification" content="Hc-cBJ6_0Fd8YR4HqbinT45Qarso0FFrwtpOBSYJZ5U" />
+    <!-- 1) ON-PAGE SEO: Title + Description + Hints -->
+    <title>
+      NepaliKart — Trusted Online Shopping in Nepal | Fashion · Electronics ·
+      Home
+    </title>
     <meta
       name="description"
-      content="Best HaatBazar is Nepal’s trusted online shopping platform offering quality products with fast delivery."
+      content="NepaliKart is Nepal’s trusted online shopping platform offering fashion, electronics, beauty, home, groceries, baby products and more. Fast delivery across Nepal, secure checkout, COD, eSewa & Khalti payments, regular deals and great customer support."
     />
+    <!-- keep keywords short — modern engines ignore this tag -->
     <meta
       name="keywords"
-      content="online shopping nepal, haatbazar, ecommerce nepal, buy online nepal"
+      content="nepalikart, online shopping nepal, ecommerce nepal, fashion nepal, electronics nepal"
     />
-<meta name="google-site-verification" content="RCmWIiKX3GuKE-gM0E9u_59ypvWR0EK59W41wANru_E" />
-    <!-- Open Graph (fallback) -->
-    <meta property="og:title" content="Best HaatBazar – Online Shopping Nepal" />
+
+    <!-- 2) CANONICAL & HREFLANG (home page only) -->
+    <link rel="canonical" href="https://nepalikart.com/" />
+    <link rel="alternate" href="https://nepalikart.com/" hreflang="x-default" />
+    <link
+      rel="canonical"
+      href="https://nepalikart.com/products"
+      hreflang="en"
+    />
+    <link
+      rel="alternate"
+      href="https://nepalikart.com/products"
+      hreflang="en-NP"
+    />
+    <link rel="alternate" href="https://nepalikart.com/fashion" hreflang="en" />
+    <link
+      rel="alternate"
+      href="https://nepalikart.com/fashion"
+      hreflang="en-NP"
+    />
+    <link
+      rel="alternate"
+      href="https://www.nepalikart.com/electronics"
+      hreflang="en"
+    />
+    <link
+      rel="alternate"
+      href="https://www.nepalikart.com/electronics"
+      hreflang="en-NP"
+    />
+
+    <!-- 3) ROBOTS / SITEMAP -->
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta name="googlebot" content="index, follow" />
+    <link
+      rel="sitemap"
+      type="application/xml"
+      title="Sitemap"
+      href="https://nepalikart.com/sitemap.xml"
+    />
+
+    <!-- 4) SOCIAL PREVIEW (Open Graph + Twitter) -->
+    <meta property="og:locale" content="en_NP" />
+    <meta property="og:site_name" content="NepaliKart" />
+    <meta
+      property="og:title"
+      content="NepaliKart — Trusted Online Shopping in Nepal"
+    />
     <meta
       property="og:description"
-      content="Shop quality products with fast delivery at Best HaatBazar."
+      content="Shop fashion, electronics, beauty, home & groceries at NepaliKart. Fast delivery across Nepal, secure checkout, COD & eSewa/Khalti payments."
     />
+    <meta property="og:image" content="https://nepalikart.com/default-og.jpg" />
     <meta
-      property="og:image"
-      content="https://besthaatbazar.com/default-og.jpg"
+      property="og:image:alt"
+      content="NepaliKart — Online Shopping in Nepal"
     />
+    <meta property="og:url" content="https://nepalikart.com/" />
     <meta property="og:type" content="website" />
 
-    <!-- Twitter (fallback) -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@nepalikart" />
+    <meta name="twitter:creator" content="@nepalikart" />
+    <meta
+      name="twitter:title"
+      content="NepaliKart — Trusted Online Shopping in Nepal"
+    />
+    <meta
+      name="twitter:description"
+      content="Shop fashion, electronics, beauty, home & groceries at NepaliKart. Fast delivery across Nepal, secure checkout, COD & eSewa/Khalti payments."
+    />
+    <meta
+      name="twitter:image"
+      content="https://nepalikart.com/default-og.jpg"
+    />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <!-- 5) PWA / FAVICONS / THEME -->
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0b74de" />
+
+    <!-- 6) PERFORMANCE HINTS (preconnect / preload fonts & critical assets) -->
+    <!-- Adjust host names to your CDN domain(s) -->
+    <link rel="preconnect" href="https://nepalikart.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Example font preload (replace with your font URL if used) -->
+    <link
+      rel="preload"
+      href="/fonts/your-font.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- 7) CORE META (author/contact) -->
+    <meta name="author" content="NepaliKart" />
+    <meta name="publisher" content="NepaliKart" />
+    <meta name="contact" content="+977-9866573177" />
+
+    <!-- 8) CATEGORY HINT (informational) -->
+    <meta
+      name="category"
+      content="Fashion, Electronics, Beauty, Sports, Home & Living, Grocery, Baby, Furniture, Accessories, Mobiles, Computers, Toys, Books, Health, Automotive, Jewelry, Kitchen, Garden, Tools, Stationery, Pet Supplies, Gaming"
+    />
+
+    <!-- 9) STRUCTURED DATA: Organization, Website, and Category ItemList -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://nepalikart.com/#organization",
+            "name": "NepaliKart",
+            "url": "https://nepalikart.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://nepalikart.com/logo.png",
+              "width": 512,
+              "height": 512
+            },
+            "sameAs": [
+              "https://facebook.com/nepalikart",
+              "https://instagram.com/nepalikart",
+              "https://twitter.com/nepalikart",
+              "https://youtube.com/@nepalikart"
+            ],
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-9866573177",
+                "contactType": "customer service",
+                "areaServed": "NP",
+                "availableLanguage": ["en", "ne"]
+              }
+            ],
+            "description": "NepaliKart is Nepal’s trusted online shopping platform offering fashion, electronics, beauty, home appliances, grocery, baby products and more."
+          },
+
+          {
+            "@type": "WebSite",
+            "@id": "https://nepalikart.com/#website",
+            "url": "https://nepalikart.com",
+            "name": "NepaliKart",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://nepalikart.com/#organization"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://nepalikart.com/search?q={search_term}",
+              "query-input": "required name=search_term"
+            }
+          },
+
+          {
+            "@type": "WebPage",
+            "@id": "https://nepalikart.com/#webpage",
+            "url": "https://nepalikart.com",
+            "name": "NepaliKart – Online Shopping Nepal",
+            "description": "Shop fashion, electronics, home, beauty, groceries and more at NepaliKart. Fast delivery across Nepal with secure checkout, COD, eSewa & Khalti.",
+            "isPartOf": {
+              "@id": "https://nepalikart.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://nepalikart.com/#breadcrumb"
+            },
+            "inLanguage": "en"
+          },
+
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://nepalikart.com/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://nepalikart.com/"
+              }
+            ]
+          },
+
+          {
+            "@type": "ItemList",
+            "@id": "https://nepalikart.com/#categories",
+            "name": "NepaliKart Categories",
+            "itemListOrder": "Ordered",
+            "numberOfItems": 10,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Fashion",
+                "url": "https://nepalikart.com/fashion"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Electronics",
+                "url": "https://nepalikart.com/electronics"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Beauty",
+                "url": "https://nepalikart.com/beauty"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Sports",
+                "url": "https://nepalikart.com/sports"
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Home & Living",
+                "url": "https://nepalikart.com/home"
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "Grocery",
+                "url": "https://nepalikart.com/grocery"
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
+                "name": "Baby",
+                "url": "https://nepalikart.com/baby"
+              },
+              {
+                "@type": "ListItem",
+                "position": 8,
+                "name": "Furniture",
+                "url": "https://nepalikart.com/furniture"
+              },
+              {
+                "@type": "ListItem",
+                "position": 9,
+                "name": "Accessories",
+                "url": "https://nepalikart.com/accessories"
+              },
+              {
+                "@type": "ListItem",
+                "position": 10,
+                "name": "Mobile & Tablets",
+                "url": "https://nepalikart.com/mobiles"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+
+    <script type="module" src="/src/main.jsx" defer></script>
   </head>
 
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

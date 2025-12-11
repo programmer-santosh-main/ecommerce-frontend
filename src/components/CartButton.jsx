@@ -43,7 +43,7 @@ export default function CartButton({ countOnly = false }) {
 
   return (
     <div className="relative">
-      <motion.button
+      <motion.div
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onMouseEnter={() => setIsHovered(true)}
@@ -82,15 +82,7 @@ export default function CartButton({ countOnly = false }) {
               {cartCount > 0 ? (
                 <>
                   <p className="text-xs text-gray-600 mb-2">Items ready for checkout</p>
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      navigate("/cart");
-                    }}
-                    className="w-full py-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg text-sm font-medium hover:from-purple-700 hover:to-indigo-700 transition-all"
-                  >
-                    View Cart
-                  </button>
+                  
                 </>
               ) : (
                 <>
@@ -109,7 +101,7 @@ export default function CartButton({ countOnly = false }) {
             </motion.div>
           )}
         </AnimatePresence>
-      </motion.button>
+      </motion.div>
     </div>
   );
 }

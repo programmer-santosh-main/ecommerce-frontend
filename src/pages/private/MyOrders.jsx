@@ -202,7 +202,7 @@ export default function MyOrders() {
   };
 
   const formatCurrency = (amount) => {
-    if (!amount && amount !== 0) return "₹0.00";
+    if (!amount && amount !== 0) return "रू0.00";
     return new Intl.NumberFormat("en-IN", {
       style: "currency",
       currency: "INR",

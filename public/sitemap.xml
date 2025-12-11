@@ -7,7 +7,7 @@
 
   <!-- HOME -->
   <url>
-    <loc>https://ecom.santoshthapa0.com.np/</loc>
+    <loc>https://nepalicart.com/</loc>
     <lastmod>2025-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -15,7 +15,7 @@
 
   <!-- ABOUT -->
   <url>
-    <loc>https://ecom.santoshthapa0.com.np/about</loc>
+    <loc>https://nepalicart.com/about</loc>
     <lastmod>2025-12-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -23,7 +23,7 @@
 
   <!-- FASHION -->
   <url>
-    <loc>https://ecom.santoshthapa0.com.np/fashion</loc>
+    <loc>https://nepalicart.com/fashion</loc>
     <lastmod>2025-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -31,7 +31,7 @@
 
   <!-- FEATURED -->
   <url>
-    <loc>https://ecom.santoshthapa0.com.np/featured</loc>
+    <loc>https://nepalicart.com/featured</loc>
     <lastmod>2025-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -39,7 +39,7 @@
 
   <!-- ELECTRONICS -->
   <url>
-    <loc>https://ecom.santoshthapa0.com.np/electronics</loc>
+    <loc>https://nepalicart.com/electronics</loc>
     <lastmod>2025-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -47,7 +47,7 @@
 
   <!-- BEAUTY -->
   <url>
-    <loc>https://ecom.santoshthapa0.com.np/beauty</loc>
+    <loc>https://nepalicart.com/beauty</loc>
     <lastmod>2025-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -55,7 +55,7 @@
 
   <!-- SPORTS -->
   <url>
-    <loc>https://ecom.santoshthapa0.com.np/sports</loc>
+    <loc>https://nepalicart.com/sports</loc>
     <lastmod>2025-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -63,7 +63,7 @@
 
   <!-- PRODUCTS PAGE (All Products List) -->
   <url>
-    <loc>https://ecom.santoshthapa0.com.np/products</loc>
+    <loc>https://nepalicart.com/products</loc>
     <lastmod>2025-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -71,7 +71,7 @@
 
   <!-- CART -->
   <url>
-    <loc>https://ecom.santoshthapa0.com.np/cart</loc>
+    <loc>https://nepalicart.com/cart</loc>
     <lastmod>2025-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -79,7 +79,7 @@
 
   <!-- MY ORDERS -->
   <url>
-    <loc>https://ecom.santoshthapa0.com.np/my-orders</loc>
+    <loc>https://nepalicart.com/my-orders</loc>
     <lastmod>2025-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -87,7 +87,7 @@
 
   <!-- LOGIN -->
   <url>
-    <loc>https://ecom.santoshthapa0.com.np/login</loc>
+    <loc>https://nepalicart.com/login</loc>
     <lastmod>2025-12-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -95,10 +95,28 @@
 
   <!-- POLICY -->
   <url>
-    <loc>https://ecom.santoshthapa0.com.np/policy</loc>
+    <loc>https://nepalicart.com/policy</loc>
     <lastmod>2025-12-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+
+  <!-- EXAMPLE PRODUCT DETAIL (real product URL example) -->
+  <url>
+    <loc>https://nepalicart.com/products/123</loc>
+    <lastmod>2025-12-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- GENERIC PRODUCT DETAIL PATTERN (placeholder for SEO) -->
+  <!-- Note: sitemaps don't support true templates — this is a placeholder/sample entry.
+       For best SEO, generate one <url> entry per real product with its actual lastmod. -->
+  <url>
+    <loc>https://nepalicart.com/products/693830ca65d6aa601f97b428</loc>
+    <lastmod>2025-12-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
 </urlset>

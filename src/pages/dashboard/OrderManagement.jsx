@@ -359,7 +359,7 @@ const fetchOrders = async () => {
           { label: "Total Orders", value: stats.total, icon: ShoppingBag, color: "from-emerald-900/30 to-teal-900/30", textColor: "text-emerald-300" },
           { label: "Pending", value: stats.pending, icon: Clock, color: "from-yellow-900/30 to-amber-900/30", textColor: "text-yellow-300" },
           { label: "Delivered", value: stats.delivered, icon: CheckCircle, color: "from-emerald-900/30 to-green-900/30", textColor: "text-emerald-300" },
-          { label: "Total Revenue", value: `₹${stats.revenue.toFixed(2)}`, icon: DollarSign, color: "from-teal-900/30 to-cyan-900/30", textColor: "text-teal-300" }
+          { label: "Total Revenue", value: `रू${stats.revenue.toFixed(2)}`, icon: DollarSign, color: "from-teal-900/30 to-cyan-900/30", textColor: "text-teal-300" }
         ].map((stat, index) => (
           <motion.div
             key={index}
@@ -621,7 +621,7 @@ const fetchOrders = async () => {
                                       )}
                                     </div>
                                   </div>
-                                  <p className="text-emerald-300 font-bold">₹{item.price?.toFixed(2)}</p>
+                                  <p className="text-emerald-300 font-bold">रू{item.price?.toFixed(2)}</p>
                                 </div>
                                 <div className="flex justify-between items-center mt-2">
                                   <div className="flex items-center gap-4">
@@ -645,7 +645,7 @@ const fetchOrders = async () => {
                                     )}
                                   </div>
                                   <p className="text-emerald-300 font-semibold">
-                                    ₹{(item.price * item.quantity).toFixed(2)}
+                                    रू{(item.price * item.quantity).toFixed(2)}
                                   </p>
                                 </div>
                               </div>
@@ -669,20 +669,20 @@ const fetchOrders = async () => {
                       <div className="space-y-2">
                         <div className="flex justify-between text-emerald-300/70">
                           <span>Subtotal</span>
-                          <span>₹{selectedOrder.subtotal?.toFixed(2) || "0.00"}</span>
+                          <span>रू{selectedOrder.subtotal?.toFixed(2) || "0.00"}</span>
                         </div>
                         <div className="flex justify-between text-emerald-300/70">
                           <span>Tax</span>
-                          <span>₹{selectedOrder.tax?.toFixed(2) || "0.00"}</span>
+                          <span>रू{selectedOrder.tax?.toFixed(2) || "0.00"}</span>
                         </div>
                         <div className="flex justify-between text-emerald-300/70">
                           <span>Shipping</span>
-                          <span>₹{selectedOrder.shipping?.toFixed(2) || "0.00"}</span>
+                          <span>रू{selectedOrder.shipping?.toFixed(2) || "0.00"}</span>
                         </div>
                         <div className="border-t border-emerald-800/30 pt-2 mt-2">
                           <div className="flex justify-between text-lg font-bold text-emerald-300">
                             <span>Total</span>
-                            <span>₹{selectedOrder.total?.toFixed(2) || "0.00"}</span>
+                            <span>रू{selectedOrder.total?.toFixed(2) || "0.00"}</span>
                           </div>
                         </div>
                       </div>
@@ -749,7 +749,7 @@ const fetchOrders = async () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-medium text-emerald-300 mb-2">
-                        Subtotal (₹)
+                        Subtotal (रू)
                       </label>
                       <input
                         type="number"
@@ -769,7 +769,7 @@ const fetchOrders = async () => {
 
                     <div>
                       <label className="block text-sm font-medium text-emerald-300 mb-2">
-                        Tax (₹)
+                        Tax (रू)
                       </label>
                       <input
                         type="number"
@@ -789,7 +789,7 @@ const fetchOrders = async () => {
 
                     <div>
                       <label className="block text-sm font-medium text-emerald-300 mb-2">
-                        Shipping Charge (₹)
+                        Shipping Charge (रू)
                       </label>
                       <input
                         type="number"
@@ -809,7 +809,7 @@ const fetchOrders = async () => {
 
                     <div>
                       <label className="block text-sm font-medium text-emerald-300 mb-2">
-                        Total Amount (₹)
+                        Total Amount (रू)
                       </label>
                       <input
                         type="number"
